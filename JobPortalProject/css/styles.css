@@ -1,11 +1,24 @@
+:root {
+  --bg: #f6f7fb;
+  --card: #fff;
+  --text: #172033;
+  --muted: #687386;
+  --primary: #3b5bdb;
+  --primary-dark: #2f49b5;
+  --border: #e5e8ef;
+  --danger: #c9364b;
+  --success: #16845b;
+  --shadow: 0 10px 30px rgba(24, 34, 55, 0.07);
+}
+
 * {
   box-sizing: border-box;
 }
 
 body {
   margin: 0;
-  background: #f6f7fb;
-  color: #172033;
+  background: var(--bg);
+  color: var(--text);
   font:
     15px/1.55 Inter,
     Segoe UI,
@@ -22,8 +35,8 @@ a {
 }
 
 .site-header {
-  background-color: #fff;
-  border-bottom: 1px solid #e5e8ef;
+  background: #fff;
+  border-bottom: 1px solid var(--border);
 }
 .nav {
   min-height: 70px;
@@ -34,7 +47,7 @@ a {
 
 .brand {
   font-weight: 800;
-  color: #3b5bdb;
+  color: var(--primary);
   font-size: 23px;
 }
 .nav-links {
@@ -44,8 +57,11 @@ a {
 }
 
 .nav-links a {
-  color: #687386;
+  color: var(--muted);
   font-weight: 600;
+}
+.nav-links a:hover {
+  color: var(--primary);
 }
 .nav-actions {
   display: flex;
@@ -70,6 +86,72 @@ a {
 }
 
 .btn-primary {
-  background-color: #3b5bdb;
-  color: #fff;
+  background-color: var(--primary);
+  color: var(--card);
+}
+
+.btn-light {
+  background: #fff;
+  border-color: var(--border);
+}
+
+.main {
+  min-height: calc(100vh - 130px);
+  padding: 42px 0;
+}
+.page {
+  min-height: 400px;
+}
+.hero {
+  display: grid;
+  grid-template-columns: 1.35fr 0.65fr;
+  gap: 28px;
+  align-items: center;
+  padding: 5px 0;
+}
+.hero h1 {
+  font-size: 45px;
+  line-height: 1.05;
+  margin: 8px 0 18px;
+  max-width: 700px;
+}
+.hero p {
+  font-size: 18px;
+  color: var(--muted);
+  max-width: 650px;
+}
+.eyebrow {
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  color: var(--primary);
+}
+.hero-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 26px;
+}
+
+.hero-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 25px;
+  box-shadow: var(--shadow);
+}
+.hero-stat {
+  padding: 18px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.hero-stat:last-child {
+  border: 0;
+}
+.hero-stat b,
+.hero-stat span {
+  display: block;
+}
+.hero-stat span {
+  color: var(--muted);
+  margin-top: 5px;
 }
