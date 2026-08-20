@@ -58,7 +58,7 @@
     </div>
   </section>
 
-  <section id="page-login" class="page">
+  <section id="page-login" class="page ">
     <div class="auth-wrap">
       <div class="card auth-card">
         <div class="page-head">
@@ -79,6 +79,35 @@
         <p class="form-note">Students use AF ID. Employees use email. Don't have an account? <a href="#/register"> Create one</a></p>
       </form>
       
+      </div>
+    </div>
+
+
+  </section>
+
+
+  <section id="page-register" class="page ">
+    <div class="auth-wrap">
+      <div class="card auth-card wide">
+        <div class="page-head">
+          <h1>Create your account</h1>
+          <p>Students register with an AF ID. Employees/job posters register with an email. The role is assigned automatically.</p>
+        </div>
+        <form id="register-form" class="form grid-form">
+          <label class="full" > Full Name <input name="name" required /></label>
+          <label class="full" >AF ID or Email <input name = "identifier"  placeholder="AF05246733 or employeeMail" required /> </label>
+          <label >Phone<input type = "tel"></label>
+          <label >Password<input type="password" minlength="6" required></label>
+          <label class="full"> Skills (students/job seekers)<input name="skills" placeholder="Java, SpringBoot, SQL, JavaScript"></label>
+        <div class="form-note full ">
+          <b>Automatic role:</b> AF ID → Job Seeker   |   Email → Job Poster
+        </div>
+        <div class="form-actions full ">
+          <button class="btn btn-primary">Register</button>
+          <a href="#/login" class="btn btn-light">Already have an account</a>
+        </div>
+
+        </form>
       </div>
     </div>
 

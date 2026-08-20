@@ -37,6 +37,9 @@ a {
 .site-header {
   background: #fff;
   border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 .nav {
   min-height: 70px;
@@ -185,6 +188,12 @@ a {
   justify-content: center;
   padding: 20px 0;
 }
+.auth-card {
+  width: min(500px, 100%);
+}
+.auth-card.wide {
+  width: min(700px, 100%);
+}
 .form {
   display: flex;
   flex-direction: column;
@@ -208,4 +217,22 @@ a {
 
 .form input:focus {
   border-color: var(--primary);
+}
+
+.grid-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.grid-form .full {
+  grid-column: 1/-1;
+}
+
+.form-actions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  /* flex-direction: column; */
+}
+.form-note {
+  color: var(--muted);
 }
