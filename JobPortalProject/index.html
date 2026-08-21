@@ -27,7 +27,7 @@
 
    </header>
 <main class="container main">
-  <section id="page-home" class="page ">
+  <section id="page-home" class="page hidden ">
     <div class="hero">
       <div>
         <span class="eyebrow">YOUR NEXT OPPORTUNITY</span>
@@ -58,7 +58,7 @@
     </div>
   </section>
 
-  <section id="page-login" class="page ">
+  <section id="page-login" class="page hidden">
     <div class="auth-wrap">
       <div class="card auth-card">
         <div class="page-head">
@@ -86,7 +86,7 @@
   </section>
 
 
-  <section id="page-register" class="page ">
+  <section id="page-register" class="page hidden">
     <div class="auth-wrap">
       <div class="card auth-card wide">
         <div class="page-head">
@@ -113,6 +113,56 @@
 
 
   </section>
+
+  <section id="page-jobs" class="page">
+    <div class="page-head page-head-row">
+      <div>
+        <h1>Find Jobs</h1>
+        <p id="job-summary"> Browser the latest jobs</p>
+      </div>
+      <a href="#/post-job" class="btn btn-primary recruiter-only">+ Post Job </a>
+    </div>
+    <section class="card filters" >
+      <form id="filter-form" class="filter-grid">
+        <input name="search" placeholder="Search Title Company or Skill" />
+        <input name="location" placeholder="Location">
+        <select name="type">
+          <option value="">All job types</option>
+          <option value="full-time">Full-time</option>
+          <option value="part-time">Part-time</option>
+          <option value="internship">Intenship</option>
+          <option value="remote">Remote</option>
+          <option value="contract">Contract</option>
+        </select>
+        <button class="btn btn-primary">Search</button>
+      </form>
+    </section>
+
+    <div id="job-list" class="job-list">
+      <article class="card job-card" data-job-slot>
+        <div>
+          <h3 data-job-title>MERN STACK DEVELOPER</h3>
+          <p data-job-company>Anudip</p>
+          <div class="chips">
+            <span class="chip">Html</span>
+            <span class="chip">Css</span>
+            <span class="chip">JavaScript</span>
+            <span class="chip">ReactJs</span>
+          </div>
+          <div class="job-bottom">
+            <small data-job-date>21 Aug 2026</small>
+            <span class="score"> <b>30%</b> <small>Skill Match Score</small></span>
+          </div>
+
+        </div>
+        <div>
+          <p data-job-meta>fulltime 700000</p>
+          <a data-job-link class="btn btn-primary btn-small">View Details</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
 </main>
 
 
