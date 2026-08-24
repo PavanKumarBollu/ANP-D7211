@@ -114,7 +114,7 @@
 
   </section>
 
-  <section id="page-jobs" class="page">
+  <section id="page-jobs" class="page hidden">
     <div class="page-head page-head-row">
       <div>
         <h1>Find Jobs</h1>
@@ -161,6 +161,58 @@
         </div>
       </article>
     </div>
+
+    <div class="pager">
+      <button id="jobs-prev" class="btn btn-light btn-small">Previous</button>
+      <span id="jobs-page">Page 1</span>
+      <button id="jobs-next" class="btn btn-light btn-small">Next</button>
+    </div>
+  </section>
+
+  <section id="page-job-detail" class="page ">
+    <div class="back">
+      <a href="#/jobs"> <- Back to Jobs</a>
+    </div>
+    <div class="detail-grid">
+      <div>
+        <section class="card">
+          <div class="detail-head">
+            <div>
+              <h1 id="detail-title">Job Title</h1>
+              <p id="detail-company">Company Name</p>
+            </div>
+            <div id="detail-score" class="score hidden">
+              <b>30%</b> <small>Skill Match Score</small>
+            </div>
+          </div>
+          <div class="meta pills">
+            <span class="detail-location">Hyderabad</span>
+            <span class="detail-type">FullTime</span>
+            <span class="detail-salary">7Lpa</span>
+            <span class="detail-status">Active</span>
+          </div>
+          <h3>Job Description</h3>
+          <p class="description" id="detail-description">Job Description will come here as detail text</p>
+
+        </section>
+        <section class="card">
+          <h3>Skills Required</h3>
+          <span class="chip"  data-detail-skill="0">Java</span>
+          <span class="chip" data-detail-skill="1">HTML</span>
+          <span class="chip" data-detail-skill="2">CSS</span>
+          <span class="chip" data-detail-skill="3">JavaScript</span>
+          <span class="chip" data-detail-skill="4">ReactJs</span>
+        </section>
+      </div>
+        <section class="card">
+          <h3>About the Recruiter</h3>
+          <p id="recruiter-company">Anudip</p>
+          <p id="recruiter-name">Pavan</p>
+          <p id="recruiter-email">Pavan@gmail.com</p>
+        </section>
+    </div>
+
+
   </section>
 
 </main>

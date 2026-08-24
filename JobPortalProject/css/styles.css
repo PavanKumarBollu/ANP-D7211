@@ -290,3 +290,84 @@ a {
   padding: 4px 9px;
   font-size: 12px;
 }
+
+.job-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  margin-top: 16px;
+}
+
+.job-bottom small,
+.job-card small {
+  color: var(--muted);
+}
+.score {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 85px;
+}
+.score b {
+  font-size: 22px;
+}
+.match-good {
+  color: var(--success);
+}
+.match-mid {
+  color: #a06a00;
+}
+.match-low {
+  color: var(--danger);
+}
+.pager {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 22px;
+}
+.detail-grid {
+  display: grid;
+  grid-template-columns: 1fr 330px;
+  gap: 20px;
+}
+.detail-grid > div {
+  min-width: 0;
+}
+
+.detail-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 22px;
+}
+
+.detail-head h1 {
+  margin: 0 0;
+}
+.detail-head p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 22px 0;
+}
+
+.pills span {
+  padding: 7px 10px;
+  background: #f0f2f6;
+  border-radius: 999px;
+  font-size: 13px;
+}
+
+.active {
+  color: var(--success);
+}
+.closed {
+  color: var(--danger);
+}
