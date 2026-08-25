@@ -203,13 +203,34 @@
           <span class="chip" data-detail-skill="3">JavaScript</span>
           <span class="chip" data-detail-skill="4">ReactJs</span>
         </section>
+
+        <section id="apply-card" class="card">
+          <h2>Apply for this job</h2>
+          <form id="apply-form" class="form">
+            <label> Resume * 
+               <input type="file" id="resume" 
+               name="resume" accept=".pdf, .doc,.docx" required></label>
+          <small> PDF, DOC, DOCX, - Max 5mb</small>
+
+          <label>Cover Letter <textarea name="coverLetter"
+             id="coverLetter" row="5"></textarea></label>
+        <div class="form-actions">
+          <button class="btn btn-primary">Submit Application</button>
+          <button class="btn btn-light" 
+          id="cancel-apply" type="button">Cancel</button>
+        </div>  
+        
+        </form>
+        </section>
       </div>
+      <aside>
         <section class="card">
           <h3>About the Recruiter</h3>
           <p id="recruiter-company">Anudip</p>
           <p id="recruiter-name">Pavan</p>
           <p id="recruiter-email">Pavan@gmail.com</p>
         </section>
+      </aside>
     </div>
 
 
