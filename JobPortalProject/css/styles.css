@@ -100,7 +100,11 @@ a {
 .btn-block {
   width: 100%;
 }
-
+.btn-danger {
+  background: #fff;
+  border-color: #f0c5cc;
+  color: var(--danger);
+}
 .main {
   min-height: calc(100vh - 130px);
   padding: 42px 0;
