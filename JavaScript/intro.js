@@ -129,39 +129,39 @@
 //  const variabelName = [val1, val2, val3]
 // here the values can be anytin like text numbers or true/ flase......
 
-const followers = [
-  "Pavan", //0
-  "Kumar", //1
-  "Rohith", //2
-  "Vasnathi", //3
-  "Jash",
-  "Guna",
-  "Kavya",
-  "Anjali",
-  "Ganesh",
-  "Shafi",
-  "chaitu",
-  "Shivani",
-  "Premitha", //12
-];
+// const followers = [
+//   "Pavan", //0
+//   "Kumar", //1
+//   "Rohith", //2
+//   "Vasnathi", //3
+//   "Jash",
+//   "Guna",
+//   "Kavya",
+//   "Anjali",
+//   "Ganesh",
+//   "Shafi",
+//   "chaitu",
+//   "Shivani",
+//   "Premitha", //12
+// ];
 
-console.log(followers);
-console.log(followers[1]); //Kumar
-console.log(followers.length);
-followers.push("Dinesh");
-console.log(followers);
-console.log(followers.length);
+// console.log(followers);
+// console.log(followers[1]); //Kumar
+// console.log(followers.length);
+// followers.push("Dinesh");
+// console.log(followers);
+// console.log(followers.length);
 
-followers[0] = "Pawan";
-console.log(followers);
+// followers[0] = "Pawan";
+// console.log(followers);
 
-followers.pop();
-console.log(followers);
+// followers.pop();
+// console.log(followers);
 
-followers.unshift("Dinesh");
-console.log(followers);
-followers.shift();
-console.log(followers);
+// followers.unshift("Dinesh");
+// console.log(followers);
+// followers.shift();
+// console.log(followers);
 
 // followers.forEach((follower) => {
 //   console.log(follower);
@@ -170,3 +170,18 @@ console.log(followers);
 // objects, Object Methods
 
 // Loops
+
+// DOM
+// console.log(document);
+// // console.log(document.getElementById("btn-submit"));
+// const btn = document.getElementById("btn-submit");
+// console.log(btn);
+// btn.addEventListener("click", () => {
+//   console.log(document.getElementById("username").value);
+//   console.log(document.getElementById("password").value);
+//   console.log("Pavan");
+// });
+
+// Objects
+{
+}

@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ButtonHide</title>
+    <style>
+      #moveButton {
+        position: absolute;
+        background-color: #007bff;
+        padding: 15px 30px;
+        font-size: 18px;
+        border-radius: 8px;
+        color: white;
+        cursor: pointer;
+        border: none;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="moveButton">Click Me !</button>
+    <script>
+      const btn = document.getElementById("moveButton");
+
+      btn.addEventListener("click", (event) => {
+        const windowHeight = window.innerHeight;
+        const windowWidth = window.innerWidth;
+
+        const btnHeight = btn.offsetHeight;
+        const btnWidth = btn.offsetWidth;
+
+        const xPosition = Math.random() * (windowHeight - btnHeight);
+        const yPosition = Math.random() * (windowHeight - btnHeight);
+        console.log(xPosition, yPosition);
+        // console.log(yPosition);
+
+        btn.style.left = xPosition + "Px";
+        btn.style.top = yPosition + "Px";
+      });
+    </script>
+  </body>
+</html>
