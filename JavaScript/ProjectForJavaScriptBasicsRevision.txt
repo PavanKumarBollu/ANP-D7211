@@ -1,0 +1,28 @@
+Project Title: Student Result Manager
+
+You will build a simple web page where you can:
+	Add a student's name and marks
+	Store students in an array
+	Represent each student using an object
+	Calculate total and average using functions
+	Determine Pass/Fail using conditionals
+	Display students using the DOM
+	Loop through students using forEach
+	Search for a student
+	Show class statistics
+
+Step 1: Create The Project
+ 
+student-manager/
+│
+├── index.html
+├── style.css
+└── script.js
+
+update index.html
+write basic CSS
+start writing the JavaScript Logic
+
+
+
+
