@@ -61,52 +61,52 @@ function calculateGrade(average) {
 // console.log(calculateGrade(75));
 // console.log(calculateGrade(30));
 
-const student = {
-  name: "Rahul",
-  maths: 80,
-  science: 75,
-  english: 90,
-};
+// const student = {
+//   name: "Rahul",
+//   maths: 80,
+//   science: 75,
+//   english: 90,
+// };
 
-console.log(student.name);
+// console.log(student.name);
 
-console.log(student.maths);
+// console.log(student.maths);
 
-console.log(student.science);
+// console.log(student.science);
 
-console.log(student.english);
+// console.log(student.english);
 
-const totalC = calculateTotal(student.maths, student.science, student.english);
-const averageC = calculateAverage(totalC);
-const resultC = checkResult(averageC);
-const gradeC = calculateGrade(averageC);
+// const totalC = calculateTotal(student.maths, student.science, student.english);
+// const averageC = calculateAverage(totalC);
+// const resultC = checkResult(averageC);
+// const gradeC = calculateGrade(averageC);
 
-const student1 = {
-  name: "Rahul",
-  maths: 80,
-  science: 75,
-  english: 90,
-  total: totalC,
-  average: averageC,
-  result: resultC,
-  grade: gradeC,
-};
+// const student1 = {
+//   name: "Rahul",
+//   maths: 80,
+//   science: 75,
+//   english: 90,
+//   total: totalC,
+//   average: averageC,
+//   result: resultC,
+//   grade: gradeC,
+// };
 
-console.log(student1);
+// console.log(student1);
 
 const students = [];
-students.push(student);
-students.push(student1);
+// students.push(student);
+// students.push(student1);
 
-const student2 = {
-  name: "Priya",
-  maths: 90,
-  science: 85,
-  english: 95,
-};
+// const student2 = {
+//   name: "Priya",
+//   maths: 90,
+//   science: 85,
+//   english: 95,
+// };
 
-students.push(student2);
-console.log(students);
+// students.push(student2);
+// console.log(students);
 
 // helper function
 function createStudent(name, maths, science, english) {
@@ -126,13 +126,62 @@ function createStudent(name, maths, science, english) {
   };
 }
 
-const student4 = createStudent("Rahul", 80, 75, 90);
+// const student4 = createStudent("Rahul", 80, 75, 90);
 
-const student5 = createStudent("Priya", 90, 85, 95);
+// const student5 = createStudent("Priya", 90, 85, 95);
 
-const student6 = createStudent("Amit", 30, 40, 25);
+// const student6 = createStudent("Amit", 30, 40, 25);
 
-students.push(student4);
-students.push(student5);
-students.push(student6);
+// students.push(student4);
+// students.push(student5);
+// students.push(student6);
+// console.log(students);
+
+// for (let i = 0; i < students.length; i++) {
+//   // console.log(students[i]);
+//   console.log(students[i].name);
+//   console.log(students[i].maths);
+// }
+
+// students.forEach(function (std) {
+//   console.log(std);
+// });
+// students.forEach((std) => {
+//   // console.log(std);
+// });
+
+// DOM
+// const studentNameInput = document.getElementById("studentName");
+
+const studentNameInput = document.querySelector("#studentName");
+const mathsInput = document.querySelector("#maths");
+const scienceInput = document.querySelector("#science");
+const englishInput = document.querySelector("#english");
+
+const addStudentBtn = document.querySelector("#addStudentBtn");
+
+// console.log(studentNameInput.value);
+// console.log(mathsInput.value);
+// console.log(scienceInput.value);
+// console.log(englishInput.value);
+// console.log(addStudentBtn.innerText);
+
+// const maths = Number(mathsInput.value);
+// const science = Number(scienceInput.value);
+// const english = Number(englishInput.value);
 console.log(students);
+addStudentBtn.addEventListener("click", () => {
+  const name = studentNameInput.value;
+  const maths = Number(mathsInput.value);
+  const science = Number(scienceInput.value);
+  const english = Number(englishInput.value);
+  console.log(name);
+  console.log(maths);
+  console.log(science);
+  console.log(english);
+
+  const studentF = createStudent(name, maths, science, english);
+  students.push(studentF);
+  console.log(students);
+  // console.log("AddStudentButton Clicked");
+});
