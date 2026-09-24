@@ -3,54 +3,182 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
-  background: #f2f2f2;
   margin: 0;
   padding: 30px;
+
+  font-family: Arial, sans-serif;
+
+  background-color: #f4f4f4;
+  color: #222;
 }
 
 .container {
+  width: 100%;
   max-width: 900px;
-  margin: auto;
-  background: white;
+
+  margin: 0 auto;
+
+  background-color: #ffffff;
+
   padding: 30px;
+
   border-radius: 10px;
 }
 
-h1 {
+.page-header {
   text-align: center;
+
+  margin-bottom: 30px;
 }
 
+.page-header h1 {
+  margin-bottom: 8px;
+}
+
+.page-header p {
+  color: #666;
+}
+
+/* =========================
+   FORM
+   ========================= */
+
 .form-section {
-  display: grid;
-  gap: 10px;
+  margin-bottom: 40px;
+}
+
+.form-section h2 {
   margin-bottom: 20px;
 }
 
-input {
+form {
+  display: grid;
+
+  gap: 15px;
+}
+
+.form-group {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 6px;
+}
+
+.form-group label {
+  font-weight: bold;
+}
+
+.form-group input {
   padding: 10px;
+
   font-size: 16px;
+
+  border: 1px solid #ccc;
+
+  border-radius: 5px;
+}
+
+.form-group input:focus {
+  outline: none;
+
+  border-color: #333;
 }
 
 button {
-  padding: 12px;
-  background: black;
+  padding: 12px 20px;
+
+  font-size: 16px;
+
+  background-color: #222;
+
   color: white;
+
   border: none;
+
+  border-radius: 5px;
+
   cursor: pointer;
 }
 
+button:hover {
+  background-color: #444;
+}
+
+/* =========================
+   MESSAGE
+   ========================= */
+
+.message {
+  min-height: 20px;
+
+  margin-top: 15px;
+
+  font-weight: bold;
+}
+
+/* =========================
+   STUDENT SECTION
+   ========================= */
+
+.section-header {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  margin-bottom: 20px;
+}
+
+.section-header h2 {
+  margin: 0;
+}
+
+#studentCount {
+  color: #666;
+}
+
+/* =========================
+   STUDENT CARD
+   ========================= */
+
 .student-card {
+  padding: 20px;
+
+  margin-bottom: 15px;
+
   border: 1px solid #ddd;
-  padding: 15px;
-  margin-bottom: 10px;
+
   border-radius: 8px;
+
+  background-color: #fafafa;
+}
+
+.student-card h3 {
+  margin-top: 0;
+}
+
+.student-card p {
+  margin: 8px 0;
 }
 
 .pass {
   color: green;
+
+  font-weight: bold;
 }
 
 .fail {
   color: red;
+
+  font-weight: bold;
+}
+
+.empty-message {
+  color: #777;
+
+  text-align: center;
+
+  padding: 20px;
 }

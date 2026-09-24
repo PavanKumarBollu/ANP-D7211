@@ -1,27 +1,78 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Student Result Manager</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <div class="container">
-      <h1>STUDENT RESULT MANAGER</h1>
-      <div class="form-section">
-        <input type="text" id="studentName" placeholder="Enter Student Name" />
-        <input type="number" id="maths" placeholder="Maths Marks" />
-        <input type="number" id="science" placeholder="Science Marks" />
-        <input type="number" id="english" placeholder="English Marks" />
-        <button id="addStudentBtn">Add Student</button>
+
+<head>
+  <meta charset="UTF-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Student Result Manager</title>
+
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- defer ensures JavaScript runs after HTML is parsed -->
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <main class="container">
+    <header class="page-header">
+      <h1>Student Result Manager</h1>
+      <p>JavaScript Basics Practice Project</p>
+    </header>
+
+    <!-- Student Form -->
+
+    <section class="form-section">
+      <h2>Add Student</h2>
+
+      <form id="studentForm">
+        <div class="form-group">
+          <label for="studentName"> Student Name </label>
+
+          <input type="text" id="studentName" name="studentName" placeholder="Enter student name" />
+        </div>
+
+        <div class="form-group">
+          <label for="maths"> Maths </label>
+
+          <input type="number" id="maths" name="maths" placeholder="0 - 100" min="0" max="100" />
+        </div>
+
+        <div class="form-group">
+          <label for="science"> Science </label>
+
+          <input type="number" id="science" name="science" placeholder="0 - 100" min="0" max="100" />
+        </div>
+
+        <div class="form-group">
+          <label for="english"> English </label>
+
+          <input type="number" id="english" name="english" placeholder="0 - 100" min="0" max="100" />
+        </div>
+
+        <button type="submit">Add Student</button>
+      </form>
+
+      <!-- Message -->
+
+      <p id="message" class="message" aria-live="polite"></p>
+    </section>
+
+    <!-- Student List -->
+
+    <section class="students-section">
+      <div class="section-header">
+        <h2>Students</h2>
+
+        <span id="studentCount"> 0 Students </span>
       </div>
 
-      <p class="message"></p>
-      <h2>STUDENTS</h2>
-      <div class="studentList"></div>
-    </div>
+      <div id="studentList">
+        <p class="empty-message">No students added yet.</p>
+      </div>
+    </section>
+  </main>
+</body>
 
-    <script src="script.js"></script>
-  </body>
 </html>
