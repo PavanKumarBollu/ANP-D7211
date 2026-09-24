@@ -1,0 +1,50 @@
+Problem Statement:
+You are working on an Employee Management System.
+The HR department wants a small JavaScript program that calculates an employee's monthly salary based on their attendance.
+
+Each employee has:
+	Employee name
+	Basic monthly salary
+	Total working days
+	Number of days present
+	Number of days absent
+
+The salary rules are:
+
+If the employee is present for all working days, they receive the full salary.
+If they are absent for some days, deduct salary based on the number of absent days.
+Salary deduction for one absent day is:
+	Daily Salary = Basic Salary / Total Working Days
+If the employee is absent for more than 5 days, display:
+	"Attendance is Low"
+at last display :
+	"Salary Processing is completed"
+
+
+Sample Input:
+	let employeeName = "Rahul";
+	let basicSalary = 30000;
+	let totalWorkingDays = 26;
+	let presentDays = 23;
+	let absentDays = 3;
+Expected output:
+	Employee Name: Rahul
+	Basic Salary: 30000
+	Present Days: 23
+	Absent Days: 3
+	Daily Salary: 1153.85
+	Deduction: 3461.54
+	Final Salary: 26538.46
+	Attendance is good
+	Salary processing completed
+Your task
+
+	Write JavaScript code that:
+
+		Stores employee information.
+		Calculates daily salary.
+		Calculates salary deduction.
+		Calculates final salary.
+		Checks attendance.
+		Checks the final salary.
+		Prints all information.

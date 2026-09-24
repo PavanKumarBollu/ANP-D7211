@@ -185,3 +185,6 @@ addStudentBtn.addEventListener("click", () => {
   console.log(students);
   // console.log("AddStudentButton Clicked");
 });
+
+//  after this create a signin form with user name and password
+// collect the deatails and print it to the console
