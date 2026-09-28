@@ -48,3 +48,44 @@ Your task
 		Checks attendance.
 		Checks the final salary.
 		Prints all information.
+
+
+
+let employeeName = "Rahul";
+let basicSalary = 30000;
+let totalWorkingDays = 26;
+let presentDays = 23;
+let absentDays = 3;
+
+// Calculate daily salary
+let dailySalary = basicSalary / totalWorkingDays;
+
+// Calculate salary deduction
+let deduction = dailySalary * absentDays;
+
+// Calculate final salary
+let finalSalary = basicSalary - deduction;
+
+// Display employee details
+console.log("Employee Name:", employeeName);
+console.log("Basic Salary:", basicSalary);
+console.log("Present Days:", presentDays);
+console.log("Absent Days:", absentDays);
+
+console.log("Daily Salary:", dailySalary.toFixed(2));
+console.log("Deduction:", deduction.toFixed(2));
+console.log("Final Salary:", finalSalary.toFixed(2));
+
+// Check attendance
+if (absentDays > 5) {
+    console.log("Attendance is low");
+} else {
+    console.log("Attendance is good");
+}
+
+// Check salary
+if (finalSalary < 15000) {
+    console.log("Salary is below minimum threshold");
+} else {
+    console.log("Salary processing completed");
+}
