@@ -1,0 +1,150 @@
+1. Write a JavaScript program to reverse a given number without converting it into a string.
+	input : let num = 12345;
+	Output: 54321
+
+Answer: 
+let num = 12345;
+let reverse = 0;
+
+while(num>0){
+
+let digit = num % 10;
+
+reverse = reverse * 10 + digit ;
+
+num = Math.floor(num / 10);
+
+}
+
+console.log(reverse);
+
+Explanation:
+num = 12345
+
+digit = 5
+reverse = 0 * 10 + 5
+reverse = 5
+
+digit = 4
+reverse = 5 * 10 + 4
+reverse = 54
+
+digit = 3
+reverse = 54 * 10 + 3
+reverse = 543
+
+digit = 2
+reverse = 543 * 10 + 2
+reverse = 5432
+
+digit = 1
+reverse = 5432 * 10 + 1
+reverse = 54321
+
+2. Write a program to check whether a number is a palindrome.
+Input : 121
+Output: 121
+
+Program: 
+let num = 121;
+let original = num;
+let reverse = 0;
+
+while(num>0){
+
+let digit = num % 10;
+
+reverse = reverse * 10 + digit ;
+
+num = Math.floor(num / 10);
+
+}
+
+if(original === reverse)
+console.log("Palindrome");
+else
+console.log("not Palindrome");
+
+Program 2: 
+ 	let num = 121;
+        let reverse = 0;
+        let original = num;
+        while (num > 0) {
+            reverse = reverse * 10 + (num % 10);
+            num = Math.floor(num / 10);
+        }
+        (original === reverse) ? console.log("Palindrome") : console.log("not Palindrome");
+
+
+
+3. Find the largest among three numbers without using Math.max().
+
+input : 
+let a = 45;
+let b = 78;
+let c = 32;
+output : 
+Largest : 78
+
+Program:
+
+let a = 45;
+let b = 78;
+let c = 32;
+
+let largest ;
+
+if(a >= b && a>=c)
+{
+	largest = a;
+}
+else if (b >= a && b >= c)
+{
+	largest = b;
+}
+else 
+{
+	largest = c;
+}
+
+console.log("Largest :", largest);
+
+Program 2 : 
+ let a = 95;
+        let b = 78;
+        let c = 32;
+        let largest;
+        (a >= b && a >= c) ? largest = a : (b >= a && b >= c) ? largest = b : largest = c;
+        console.log("Largest :", largest);
+
+
+4. Write a program to check whether a number is prime.
+
+Input:
+let num = 29;
+Output :
+Prime
+
+
+let num = 29;
+let isPrime = true;
+
+if(num <= 1)
+{
+isPrime = false;
+}
+else{
+
+	for(let i = 2; i < num ; i++)
+	{
+		if(num % i === 0 )
+		{
+			isPrime = false;
+			break;
+		}
+	}
+}
+
+(isPrime) ? console.log("Prime") : console.log("Not Prime");
+
+

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        let num = 29;
+        let isPrime = true;
+
+        if (num <= 1) {
+            isPrime = false;
+        }
+        else {
+
+            for (let i = 2; i < num; i++) {
+                // console.log(i);
+                if (num % i === 0) {
+                    isPrime = false;
+                    break;
+                }
+            }
+        }
+
+        (isPrime) ? console.log("Prime") : console.log("Not Prime");
+    </script>
+</body>
+
+</html>

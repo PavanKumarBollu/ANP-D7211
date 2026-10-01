@@ -57,6 +57,42 @@ async function render() {
     showPage("login");
     return;
   }
+  if (route === "/register") {
+    showPage("register");
+    return;
+  }
+  if (route === "/job-detail") {
+    showPage("job-detail");
+    return;
+  }
+  if (route === "/my-applications") {
+    showPage("my-applications");
+    return;
+  }
+  if (route === "/post-job") {
+    showPage("post-job");
+    return;
+  }
+  if (route === "/my-jobs") {
+    showPage("my-jobs");
+    return;
+  }
+  if (route === "/applicants") {
+    showPage("applicants");
+    return;
+  }
+  if (route === "/dashboard") {
+    showPage("dashboard");
+    return;
+  }
+  if (route === "/admin-users") {
+    showPage("admin-users");
+    return;
+  }
+  if (route === "/error") {
+    showPage("error");
+    return;
+  }
 }
 
 window.addEventListener("hashchange", render);
