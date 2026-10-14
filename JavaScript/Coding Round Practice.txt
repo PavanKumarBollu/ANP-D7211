@@ -148,3 +148,179 @@ else{
 (isPrime) ? console.log("Prime") : console.log("Not Prime");
 
 
+5. Find the sum of digits of a number.
+input : 58321;
+Output : 19;
+
+let num = 58321;
+        let sum = 0;
+
+        while (num > 0) {
+            let digit = num % 10;
+            sum += digit;
+            num = Math.floor(num / 10);
+        }
+        console.log(sum);
+
+
+6. Count the number of digits in a number.
+input : 987654;
+Output: 6
+
+ let num = 9;
+        let count = 0;
+
+        while (num > 0) {
+            num = Math.floor(num / 10); // 987654 / 10 => 98765.4 => Math.floor(98765.4) => 98765
+            count++;
+        }
+
+        // 1234567 / 10 => 123456.7
+
+        // Math.floor(123456.7) => 123456
+        // Math.ceil(123456.7) => 123457
+
+        console.log(count);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+7. Check whether a three-digit number is an Armstrong number.
+Input : 153
+		1³ + 5³ + 3³
+
+		= 1 + 125 + 27
+		= 153
+Output: ArmstrongNumber
+
+
+let num = 153;
+        let sum = 0;
+        let originalNum = num;
+
+
+        while (num > 0) {
+            let digit = num % 10;
+            // sum = sum + digit * digit * digit;
+            sum = sum + digit ** 3;
+            num = Math.floor(num / 10);
+        }
+        if (sum === originalNum) {
+            console.log(originalNum + " is an Armstrong number.");
+        } else {
+            console.log(originalNum + " is not an Armstrong number.");
+        }
+
+
+
+
+
+
+8. Print the numbers in revers order from 100 to 1
+input: 100
+output: 100, 99, 97, 95, 92, ........... 0
+
+
+  // 100 -1  = 99, 99-2=97, 97-3=94, 94-4=90, 90-5=85, 85-6=79, 79-7=72, 72-8=64, 64-9=55, 55-10=45, 45-11=34, 34-12=22, 22-13=9, 9-14=-5
+
+
+        let num = 100;
+        let decrement = 1;
+        while (num >= 0) {
+            console.log(num);
+            num -= decrement; // num = num - decrement
+            decrement++; // decrement = decrement + 1
+        }
+
+
+9. Count vowels and consonants in a string.
+
+input : JavaScript
+Output: vowels = 3
+consonants = 7
+
+let str = "Java Script is a programming language";
+        let vowels = 0;
+        let consonants = 0;
+
+        for (let i = 0; i < str.length; i++) {
+
+            let ch = str[i].toLowerCase();
+
+            if (ch === " ")
+                continue;
+
+            if (ch === 'a' || ch === 'e' || ch === 'i' || ch == 'o' || ch == 'u') {
+                vowels++;
+            } else {
+                consonants++;
+            }
+        }
+        console.log("Vowels: " + vowels);
+        console.log("Consonants: " + consonants);
+
+Program 2:
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        let str = "Java Script";
+
+        let vowels = ['a', 'e', 'i', 'o', 'u'];
+        let vowelsCount = 0;
+        let consonantsCount = 0;
+
+        for (let i = 0; i < str.length; i++) {
+
+            let ch = str[i].toLowerCase();
+
+            if (ch === " ")
+                continue;
+
+            if (vowels.includes(ch)) {
+                vowelsCount++;
+            } else {
+                consonantsCount++;
+            }
+        }
+        console.log("Vowels: " + vowelsCount);
+        console.log("Consonants: " + consonantsCount);
+
+    </script>
+</body>
+
+</html>
+
+
+
+
+10. Count how many times each character occurs in a string.
+Input: let str = "programming";
+Output: 
+p -> 1
+r -> 2
+o -> 1
+g -> 2
+a -> 1
+m -> 2
+i -> 1
+n -> 1
+

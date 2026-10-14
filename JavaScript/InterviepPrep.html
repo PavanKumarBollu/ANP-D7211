@@ -10,25 +10,28 @@
 <body>
 
     <script>
+        let str = "Java Script";
 
-        let num = 29;
-        let isPrime = true;
+        let vowels = ['a', 'e', 'i', 'o', 'u'];
+        let vowelsCount = 0;
+        let consonantsCount = 0;
 
-        if (num <= 1) {
-            isPrime = false;
-        }
-        else {
+        for (let i = 0; i < str.length; i++) {
 
-            for (let i = 2; i < num; i++) {
-                // console.log(i);
-                if (num % i === 0) {
-                    isPrime = false;
-                    break;
-                }
+            let ch = str[i].toLowerCase();
+
+            if (ch === " ")
+                continue;
+
+            if (vowels.includes(ch)) {
+                vowelsCount++;
+            } else {
+                consonantsCount++;
             }
         }
+        console.log("Vowels: " + vowelsCount);
+        console.log("Consonants: " + consonantsCount);
 
-        (isPrime) ? console.log("Prime") : console.log("Not Prime");
     </script>
 </body>
 
