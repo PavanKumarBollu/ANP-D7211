@@ -1,9 +1,9 @@
-const API_KEY = "aaaaaaaa"; // Replace with your actual OMDb API key
+const API_KEY = "aaaaaaa"; // Replace with your actual OMDb API key
 // const movieTitle = "Batman"; // Example movie title
 
 const movieTitleInput = document.getElementById("movieTitle");
 const searchButton = document.getElementById("searchButton");
-
+// REST APIS
 searchButton.addEventListener("click", () => {
   const movieTitle = movieTitleInput.value;
   // Construct the correct API URL
